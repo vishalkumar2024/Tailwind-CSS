@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Height in Tailwind</title>
+    <link rel="stylesheet" href="./output.css">
+</head>
+
+<body class="h-screen"> <!-- By default the body tag itself have not the height 100vh so, h-screen class is applied to give it full height -->
+    <h1 class="bg-blue-700 text-amber-300 inline-block h-40">This is a Height</h1><br><br>
+
+    <div class="inline-block bg-emerald-500 h-96 max-h-20">This div is for maximum height</div><br><br>
+    <!-- if we want to assign a value to height greater than max-height , it will not apply. Here the value at max-height(max-h) will apply instead of height(h) -->
+
+
+    <div class="inline-block bg-emerald-800 h-10 min-h-32">This div is for maximum height</div><br><br>
+    <!-- if we want to assign a value to height lesser than min-height , it will not apply. Here the value at min-height(min-h) will apply instead of height(h) -->
+
+    <div class="bg-gray-300 h-[100px]">
+        <span class="bg-rose-500 h-1/4 inline-block">First Part</span><br>
+        <span class="bg-orange-400  h-3/4 inline-block">Second Part</s><br>
+    </div> <br>
+    <!-- Here span1 occupied 1/4 means 25% height of its parent and rest 3/4 (75%) height has been occupied by span2 -->
+    
+    <div class="bg-red-300 h-fit hover:h-[200px]">On hover it's width extends to 200px</div>
+
+    <!-- h-full grabs the total height of its div and h-screen assign that div the height of the screen  -->
+</body>
+
+</html>
