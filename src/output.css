@@ -794,11 +794,32 @@
   .aspect-square {
     aspect-ratio: 1 / 1;
   }
-  .h-1 {
+  .size-1 {
+    width: calc(var(--spacing) * 1);
     height: calc(var(--spacing) * 1);
   }
-  .h-1\/2 {
+  .size-1\/2 {
+    width: calc(1/2 * 100%);
     height: calc(1/2 * 100%);
+  }
+  .size-20 {
+    width: calc(var(--spacing) * 20);
+    height: calc(var(--spacing) * 20);
+  }
+  .size-52 {
+    width: calc(var(--spacing) * 52);
+    height: calc(var(--spacing) * 52);
+  }
+  .size-\[50px\] {
+    width: 50px;
+    height: 50px;
+  }
+  .size-\[200px\] {
+    width: 200px;
+    height: 200px;
+  }
+  .h-1 {
+    height: calc(var(--spacing) * 1);
   }
   .h-1\/4 {
     height: calc(1/4 * 100%);
@@ -821,17 +842,8 @@
   .h-96 {
     height: calc(var(--spacing) * 96);
   }
-  .h-\[50\%\] {
-    height: 50%;
-  }
-  .h-\[50px\] {
-    height: 50px;
-  }
   .h-\[100px\] {
     height: 100px;
-  }
-  .h-\[200px\] {
-    height: 200px;
   }
   .h-fit {
     height: fit-content;
@@ -1549,6 +1561,12 @@
   .border-purple-950 {
     border-color: var(--color-purple-950);
   }
+  .border-e-orange-500 {
+    border-inline-end-color: var(--color-orange-500);
+  }
+  .border-b-orange-400 {
+    border-bottom-color: var(--color-orange-400);
+  }
   .bg-\(--my_variable\) {
     background-color: var(--my_variable);
   }
@@ -1563,6 +1581,9 @@
   }
   .bg-\[var\(--my_variable\)\] {
     background-color: var(--my_variable);
+  }
+  .bg-amber-400 {
+    background-color: var(--color-amber-400);
   }
   .bg-black {
     background-color: var(--color-black);
@@ -1612,9 +1633,6 @@
   .bg-gray-300 {
     background-color: var(--color-gray-300);
   }
-  .bg-gray-400 {
-    background-color: var(--color-gray-400);
-  }
   .bg-green-400 {
     background-color: var(--color-green-400);
   }
@@ -1639,8 +1657,8 @@
   .bg-rose-500 {
     background-color: var(--color-rose-500);
   }
-  .bg-rose-800 {
-    background-color: var(--color-rose-800);
+  .bg-sky-400 {
+    background-color: var(--color-sky-400);
   }
   .bg-teal-300 {
     background-color: var(--color-teal-300);
