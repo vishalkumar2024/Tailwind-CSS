@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Width in Tailwind</title>
+    <link rel="stylesheet" href="./output.css">
+</head>
+
+<body>
+    <div class="bg-orange-400 w-13">width of div but in limited area </div><br>
+
+    <span class="bg-green-400 block ">This is span</span><br>
+
+    <div class="w-5xl max-w-2xl bg-teal-800">The use of max-width</div><br>
+    <!--if we want to assign a value to width greater than max-width , it will not apply. Here the value at max-width(max-w) will apply instead of width(w) -->
+
+    <div class=" min-w-80 w-0  bg-teal-300">The use of min-width</div><br>
+    <!--if we want to assign a value to width lesser than min-width ,it will not apply. Here the value at min-width(min-w) will apply instead of width(w) -->
+
+    <div class="bg-fuchsia-500 w-fit">To fit the width of div according to the content</div><br>
+
+    <div class="bg-indigo-600 w-2/3">Width according to percentage</div><br>
+    <!-- This way we can assign the value to width in percentage 
+     like:- 2/3 = 66.66% , 2/6 = 33.3% , 1/4 = 25%-->
+
+    <div class="flex gap-[1px]">
+        <span class="bg-rose-500 w-1/4 block">First Part</span><br>
+        <span class="bg-orange-400  w-3/4 block">Second Part</s><br>
+    </div> <br>
+    <!-- Here span1 occupied 1/4 means 25% area and rest 3/4 (75%) area have been occupied by span2 -->
+
+    <div class="bg-red-300 w-fit hover:w-full">On hover it's width extends to Full</div>
+</body>
+
+</html>
