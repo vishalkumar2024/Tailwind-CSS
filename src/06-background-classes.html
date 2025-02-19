@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background class in tailwind</title>
+    <link rel="stylesheet" href="./output.css">
+</head>
+
+<body>
+    <div class="bg-[#37b051] size-48"></div><br><br> <!-- This way any hexadecimal color can be set to a div-->
+
+    <!-- Different background image properties -->
+    <div
+        class="bg-gray-400 h-[300px] bg-[url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmCWkYsodMHiScbgzpZ73ILSV3SKROCFQ8UQ&s)] bg-no-repeat bg-center bg-cover">
+    </div><br><br>
+
+
+    <!-- Some examples of linear gradient -->
+    <div class="bg-gradient-to-t to-emerald-500  from-red-600 size-[200px]"></div><br><br>
+    <div class="bg-gradient-to-tl to-emerald-500 via-fuchsia-600 from-red-600 size-[200px]"></div><br><br>
+    <div class=" bg-gradient-to-r from-emerald-900 from-10% via-fuchsia-900 via-30% to-red-800 to-90% size-[200px]">
+    </div><br><br>
+
+
+    <!-- Some example of Radial gradient -->
+    <div class="size-[150px] rounded-full bg-radial from-pink-400 from-40% to-fuchsia-700"></div><br><br>
+    <div class="size-[150px] rounded-full bg-radial-[at_50%_75%] from-sky-200 via-blue-400 to-indigo-900 to-90%"></div>
+    <br><br>
+    <div class="size-[150px] rounded-full bg-radial-[at_25%_25%] from-white to-zinc-900 to-75%"></div><br><br>
+
+
+    <!-- Some example of conic gradient -->
+    <div class="size-[150px] rounded-full bg-conic from-blue-600 to-sky-400 to-50%"></div><br><br>
+    <div class="size-[150px] rounded-full bg-conic-150 from-indigo-600 via-indigo-50 to-indigo-600"></div><br><br>
+    <div class="size-[150px] rounded-full bg-conic/decreasing from-violet-700 via-lime-300 to-violet-700"></div>
+    <br><br><br>
+
+
+    <!-- Some example of shadow in tailwind -->
+    <div class="shadow-2xl shadow-amber-700 size-[150px]"></div><br><br>
+    <div class=" bg-blue-100 inset-shadow-2xs inset-shadow-amber-500 size-[150px]">t</div><br><br>
+    <button class="bg-blue-500 shadow-xl shadow-blue-500/50 size-[200px]">Subscribe</button><br><br>
+    <div class="size-[200px] shadow-inner shadow-amber-900"></div>
+</body>
+
+</html>
