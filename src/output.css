@@ -707,6 +707,9 @@
   .mx-auto {
     margin-inline: auto;
   }
+  .mt-12 {
+    margin-top: calc(var(--spacing) * 12);
+  }
   .mr-6 {
     margin-right: calc(var(--spacing) * 6);
   }
@@ -826,10 +829,6 @@
   .size-\[200px\] {
     width: 200px;
     height: 200px;
-  }
-  .size-svh {
-    width: 100svh;
-    height: 100svh;
   }
   .size-svw {
     width: 100svw;
@@ -1587,9 +1586,6 @@
   .border-purple-950 {
     border-color: var(--color-purple-950);
   }
-  .border-t-green-500 {
-    border-top-color: var(--color-green-500);
-  }
   .bg-\(--my_variable\) {
     background-color: var(--my_variable);
   }
@@ -1610,9 +1606,6 @@
   }
   .bg-amber-400 {
     background-color: var(--color-amber-400);
-  }
-  .bg-amber-500 {
-    background-color: var(--color-amber-500);
   }
   .bg-amber-600 {
     background-color: var(--color-amber-600);
@@ -2020,17 +2013,11 @@
   .p-5 {
     padding: calc(var(--spacing) * 5);
   }
-  .p-7 {
-    padding: calc(var(--spacing) * 7);
-  }
   .p-8 {
     padding: calc(var(--spacing) * 8);
   }
   .p-12 {
     padding: calc(var(--spacing) * 12);
-  }
-  .p-16 {
-    padding: calc(var(--spacing) * 16);
   }
   .text-center {
     text-align: center;
@@ -2086,9 +2073,6 @@
   }
   .text-\[16px\] {
     font-size: 16px;
-  }
-  .text-\[1rem\] {
-    font-size: 1rem;
   }
   .leading-none {
     --tw-leading: 1;
@@ -2750,13 +2734,6 @@
       }
     }
   }
-  .hover\:w-\[100px\] {
-    &:hover {
-      @media (hover: hover) {
-        width: 100px;
-      }
-    }
-  }
   .hover\:w-\[200px\] {
     &:hover {
       @media (hover: hover) {
@@ -2785,13 +2762,6 @@
       }
     }
   }
-  .hover\:capitalize {
-    &:hover {
-      @media (hover: hover) {
-        text-transform: capitalize;
-      }
-    }
-  }
   .hover\:uppercase {
     &:hover {
       @media (hover: hover) {
@@ -2804,19 +2774,9 @@
       height: 100px;
     }
   }
-  .focus\:w-\[100px\] {
-    &:focus {
-      width: 100px;
-    }
-  }
   .focus\:bg-amber-500 {
     &:focus {
       background-color: var(--color-amber-500);
-    }
-  }
-  .focus\:bg-blue-800 {
-    &:focus {
-      background-color: var(--color-blue-800);
     }
   }
   .focus\:capitalize {
@@ -2824,20 +2784,10 @@
       text-transform: capitalize;
     }
   }
-  .focus\:uppercase {
-    &:focus {
-      text-transform: uppercase;
-    }
-  }
   .active\:size-\[200px\] {
     &:active {
       width: 200px;
       height: 200px;
-    }
-  }
-  .active\:w-\[100px\] {
-    &:active {
-      width: 100px;
     }
   }
   .active\:bg-red-500 {
@@ -2848,6 +2798,11 @@
   .active\:uppercase {
     &:active {
       text-transform: uppercase;
+    }
+  }
+  .max-\[600px\]\:bg-sky-300 {
+    @media (width < 600px) {
+      background-color: var(--color-sky-300);
     }
   }
   .max-2xl\:bg-red-600 {
@@ -2875,9 +2830,24 @@
       background-color: var(--color-blue-500);
     }
   }
-  .sm\:bg-blue-400 {
-    @media (width >= 40rem) {
-      background-color: var(--color-blue-400);
+  .min-\[320px\]\:bg-green-600 {
+    @media (width >= 320px) {
+      background-color: var(--color-green-600);
+    }
+  }
+  .min-\[320px\]\:bg-red-600 {
+    @media (width >= 320px) {
+      background-color: var(--color-red-600);
+    }
+  }
+  .min-\[320px\]\:text-center {
+    @media (width >= 320px) {
+      text-align: center;
+    }
+  }
+  .min-\[650px\]\:bg-green-600 {
+    @media (width >= 650px) {
+      background-color: var(--color-green-600);
     }
   }
   .sm\:bg-blue-500 {
@@ -2885,29 +2855,9 @@
       background-color: var(--color-blue-500);
     }
   }
-  .sm\:bg-red-400 {
-    @media (width >= 40rem) {
-      background-color: var(--color-red-400);
-    }
-  }
-  .sm\:bg-red-500 {
-    @media (width >= 40rem) {
-      background-color: var(--color-red-500);
-    }
-  }
-  .md\:bg-blue-500 {
-    @media (width >= 48rem) {
-      background-color: var(--color-blue-500);
-    }
-  }
   .md\:bg-emerald-500 {
     @media (width >= 48rem) {
       background-color: var(--color-emerald-500);
-    }
-  }
-  .lg\:bg-blue-500 {
-    @media (width >= 64rem) {
-      background-color: var(--color-blue-500);
     }
   }
   .lg\:bg-fuchsia-600 {
