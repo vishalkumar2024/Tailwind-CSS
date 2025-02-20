@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breakpoints in Tailwind</title>
+    <link rel="stylesheet" href="./output.css">
+</head>
+
+<!-- prefix like sm, md, lg, xl, 2xl work as @media (width >= 40rem) { ... } -->
+
+<body class="size-svw bg-amber-600
+     sm:bg-blue-500
+      md:bg-emerald-500
+       lg:bg-fuchsia-600
+        xl:border-y-gray-500 
+         2xl:bg-red-600">
+
+
+    <!-- prefix like max-sm, max-md, max-lg, max-xl, max-2xl work as @media (width < 40rem) { ... } -->
+    <h1 class=" bg-amber-600
+    max-sm:bg-blue-500
+     max-md:bg-emerald-500
+      max-lg:bg-fuchsia-600
+       max-xl:border-y-gray-500 
+        max-2xl:bg-red-600 p-8 text-[1.5rem]">This is example of Breakpoints and media query</h1>
+</body>
+
+</html>

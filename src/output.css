@@ -827,6 +827,14 @@
     width: 200px;
     height: 200px;
   }
+  .size-svh {
+    width: 100svh;
+    height: 100svh;
+  }
+  .size-svw {
+    width: 100svw;
+    height: 100svw;
+  }
   .h-1 {
     height: calc(var(--spacing) * 1);
   }
@@ -1603,6 +1611,12 @@
   .bg-amber-400 {
     background-color: var(--color-amber-400);
   }
+  .bg-amber-500 {
+    background-color: var(--color-amber-500);
+  }
+  .bg-amber-600 {
+    background-color: var(--color-amber-600);
+  }
   .bg-black {
     background-color: var(--color-black);
   }
@@ -2009,6 +2023,9 @@
   .p-7 {
     padding: calc(var(--spacing) * 7);
   }
+  .p-8 {
+    padding: calc(var(--spacing) * 8);
+  }
   .p-12 {
     padding: calc(var(--spacing) * 12);
   }
@@ -2061,11 +2078,17 @@
     font-size: var(--text-4xl);
     line-height: var(--tw-leading, var(--text-4xl--line-height));
   }
+  .text-\[1\.5rem\] {
+    font-size: 1.5rem;
+  }
   .text-\[3rem\] {
     font-size: 3rem;
   }
   .text-\[16px\] {
     font-size: 16px;
+  }
+  .text-\[1rem\] {
+    font-size: 1rem;
   }
   .leading-none {
     --tw-leading: 1;
@@ -2796,6 +2819,11 @@
       background-color: var(--color-blue-800);
     }
   }
+  .focus\:capitalize {
+    &:focus {
+      text-transform: capitalize;
+    }
+  }
   .focus\:uppercase {
     &:focus {
       text-transform: uppercase;
@@ -2820,6 +2848,81 @@
   .active\:uppercase {
     &:active {
       text-transform: uppercase;
+    }
+  }
+  .max-2xl\:bg-red-600 {
+    @media (width < 96rem) {
+      background-color: var(--color-red-600);
+    }
+  }
+  .max-xl\:border-y-gray-500 {
+    @media (width < 80rem) {
+      border-block-color: var(--color-gray-500);
+    }
+  }
+  .max-lg\:bg-fuchsia-600 {
+    @media (width < 64rem) {
+      background-color: var(--color-fuchsia-600);
+    }
+  }
+  .max-md\:bg-emerald-500 {
+    @media (width < 48rem) {
+      background-color: var(--color-emerald-500);
+    }
+  }
+  .max-sm\:bg-blue-500 {
+    @media (width < 40rem) {
+      background-color: var(--color-blue-500);
+    }
+  }
+  .sm\:bg-blue-400 {
+    @media (width >= 40rem) {
+      background-color: var(--color-blue-400);
+    }
+  }
+  .sm\:bg-blue-500 {
+    @media (width >= 40rem) {
+      background-color: var(--color-blue-500);
+    }
+  }
+  .sm\:bg-red-400 {
+    @media (width >= 40rem) {
+      background-color: var(--color-red-400);
+    }
+  }
+  .sm\:bg-red-500 {
+    @media (width >= 40rem) {
+      background-color: var(--color-red-500);
+    }
+  }
+  .md\:bg-blue-500 {
+    @media (width >= 48rem) {
+      background-color: var(--color-blue-500);
+    }
+  }
+  .md\:bg-emerald-500 {
+    @media (width >= 48rem) {
+      background-color: var(--color-emerald-500);
+    }
+  }
+  .lg\:bg-blue-500 {
+    @media (width >= 64rem) {
+      background-color: var(--color-blue-500);
+    }
+  }
+  .lg\:bg-fuchsia-600 {
+    @media (width >= 64rem) {
+      background-color: var(--color-fuchsia-600);
+    }
+  }
+  .xl\:border-y-gray-500 {
+    @media (width >= 80rem) {
+      border-block-color: var(--color-gray-500);
+    }
+  }
+  .\32 xl\:bg-red-600 {
+    @media (width >= 96rem) {
+      background-color: var(--color-red-600);
     }
   }
   .\[\&\>\*\]\:text-2xl {
