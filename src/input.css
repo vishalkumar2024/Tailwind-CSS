@@ -1,4 +1,12 @@
 @import "tailwindcss";
-/* @tailwind base;
-@tailwind components;
-@tailwind utilities; */
+
+/* Custom classes */
+@layer components{
+    .btn-style{
+        @apply bg-cyan-500 p-4 border-blue-900 border-2 rounded-sm text-[20px]
+    }
+    .h1-style{
+        @apply .....
+    }
+    /* We can define more classes like this */
+}
